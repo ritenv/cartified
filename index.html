@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Cart Coding Challenge</title>
+	<script type="text/javascript" src="./angular.js"></script>
+	<script type="text/javascript" src="./ng-cart.js"></script>
+	<style>
+		body {
+			font-family: sans-serif;
+			font-size: 80%;
+		}
+		#store-container {
+			border: 1px solid #ccc;
+			padding: 50px;
+			max-width: 60%;
+			margin: 0 auto;
+		}
+		a {
+			display: inline-block;
+			padding: 10px 12px;
+			border-radius: 5px;
+			color: #fff;
+			background: #22aaaa;
+			margin-right: 2px;
+			cursor: pointer;
+		}
+		a:hover {
+			background: #22bbbb;
+		}
+		h1 {
+			margin: 0 0 20px 0;
+		}
+	</style>
+</head>
+<body ng-app="services.cart">
+	<div ng-controller="Store" id="store-container">
+		<h1>Cartified</h1>
+		<h2>Check console for output</h2>
+		<a ng-click="addMockData()">Add</a>
+		<a ng-click="removeSample()">Remove</a>
+		<a ng-click="clearAll()">Clear</a>
+		<a ng-click="changeQty()">Change Quantity</a>
+		<a ng-click="consoleOutput()">Console Output</a>
+		<a ng-click="unbindModifiedEvent()">Unbind Custom Event</a>
+	</div>
+</body>
+</html>
