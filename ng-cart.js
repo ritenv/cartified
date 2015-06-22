@@ -60,7 +60,7 @@ angular.module('services.cart')
              */
             fetch: function() {
                 var fromLocalStorage = localStorage.getItem(this.key);
-                if (fromLocalStorage.length) {
+                if (fromLocalStorage && fromLocalStorage.length) {
                     return angular.fromJson(fromLocalStorage);
                 } else {
                     return [];
